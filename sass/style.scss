@@ -1,0 +1,52 @@
+/*!
+Theme Name: Cosmed Manipulados
+Author: NetSis - Sitemas Web
+Author URI: http://www.netsis.com.br/
+Version: 2016
+Theme URI: http://www.netsis.com.br/
+License: GPLv2 (or later)
+License URI: https://wordpress.org/about/gpl/
+Tags: editor-style
+*/
+
+@import "compass/css3";
+@import "bootstrap_const";
+@import "wordpress";
+@import "global";
+
+body {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 20px;
+	color: #414042;
+}
+
+h1,
+h2 {
+	font-weight: bold;
+	color: $cor-2;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 42px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.destaque-1 {
+	background-color: $cor-1;
+	color: #fff;
+	margin: 36px 0 48px 0;
+	padding: 0 0 18px 0;
+}
+
+@import "header";
+
+@import "footer";

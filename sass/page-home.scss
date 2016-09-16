@@ -1,0 +1,210 @@
+@import "bootstrap_const";
+@import "global";
+
+main.site {
+	//ToDo: eliminar
+	div.texto.destaque-1 {
+		display: none;
+	}
+
+	.swiper-button-next,
+	.swiper-container-rtl .swiper-button-prev {
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%2340693B'%2F%3E%3C%2Fsvg%3E");
+	}
+
+	.swiper-button-prev,
+	.swiper-container-rtl .swiper-button-next {
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%2340693B'%2F%3E%3C%2Fsvg%3E");
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #40693B;
+	}
+
+	div.iso-atendemos-brasil {
+		background-color: $cor-2;
+		margin-bottom: 40px;
+
+		img {
+			@media(min-width: $screen-lg-min) {
+				margin-left: 2.5%;
+			}
+		}
+	}
+
+	div.area-medica form,
+	div.faca-orcamento a,
+	div.apoio-ao-esporte a {
+		display: block;
+		width: 252px;
+		height: 294px;
+		margin: 0 auto 30px;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		@media(min-width: 395px) {
+			width: 360px;
+			height: 420px;
+		}
+
+		@media(min-width: $screen-md-min) {
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	div.area-medica {
+		form {
+			position: relative;
+
+			> div {
+				position: absolute;
+				bottom: 0;
+				right: 5px;
+				width: 188px;
+
+				@media(min-width: 395px) {
+					bottom: 9px;
+					right: 35px;
+					width: 228px;
+				}
+
+				@media(min-width: $screen-md-min) {
+					bottom: 78px;
+					right: 10px;
+				}
+
+				@media(min-width: $screen-lg-min) {
+					bottom: 9px;
+					right: 35px;
+				}
+			}
+
+			p {
+				margin-bottom: 4px;
+			}
+
+			p.login {
+				margin-bottom: 0;
+
+				@media(min-width: 395px) {
+					margin-bottom: 4px;
+				}
+			}
+
+			label,
+			input {
+				font-size: 15px;
+			}
+
+			label {
+				font-weight: normal;
+				color: #fff;
+				margin-bottom: 0;
+
+				@media(min-width: 395px) {
+					margin-bottom: 5px;
+				}
+
+				@media(min-width: $screen-md-min) {
+					margin-left: 15px;
+				}
+
+				@media(min-width: $screen-lg-min) {
+					margin-left: 0;
+				}
+			}
+
+			br {
+				display: none;
+			}
+
+			input {
+				float: right;
+				width: 140px;
+				border: none;
+				background: none;
+				margin-top: 5px;
+
+				@media(min-width: 395px) {
+					width: 180px;
+				}
+
+				@media(min-width: $screen-md-min) {
+					width: 170px;
+				}
+
+				@media(min-width: $screen-lg-min) {
+					width: 180px;
+				}
+			}
+
+			input[type="submit"] {
+				margin-top: 0;
+				float: left;
+				width: auto;
+				text-transform: uppercase;
+				color: #fff;
+				font-weight: bold;
+				font-size: 20px;
+				padding: 0;
+			}
+
+			a,
+			a:hover,
+			a:visited,
+			a:active {
+				color: #fff;
+				text-decoration: none;
+				font-size: 15px;
+				text-transform: uppercase;
+				font-weight: bold;
+				float: right;
+				margin-top: 6px;
+			}
+		}
+	}
+
+	div.faca-orcamento,
+	div.apoio-ao-esporte {
+		a {
+			text-indent: -9000px;
+		}
+	}
+
+	div.area-medica {
+		form {
+			background-image: image-url('home-box-login-cadastro.jpg', false, false);
+		}
+	}
+
+	div.faca-orcamento {
+		a {
+			background-image: image-url('home-box-faca-orcamento.jpg', false, false);
+		}
+	}
+
+	div.apoio-ao-esporte {
+		a {
+			background-image: image-url('home-box-apoio-esporte.jpg', false, false);
+		}
+	}
+
+	div.texto {
+		text-align: center;
+		padding: 28px 0 8px 0;
+		margin-bottom: -20px;
+	}
+
+	form.login {
+		p.entrar {
+			position: relative;
+
+			img {
+				position: absolute;
+				top: 9px;
+				left: 80px;
+			}
+		}
+	}
+}

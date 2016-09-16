@@ -1,0 +1,72 @@
+main.site {
+	div.menu-user {
+		position: absolute;
+		top: -23px;
+		right: 15px;
+
+		img {
+			position: absolute;
+			top: 5px;
+			left: -20px;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			font-size: 16px;
+
+			li {
+				display: inline-block;
+			}
+
+			li:after {
+				content: ' | ';
+			}
+
+			li:last-child:after {
+				content: '';
+			}
+
+			a,
+			a:hover,
+			a:active,
+			a:visited {
+				color: #414042;
+
+				span {
+					color: #c4a01b;
+				}
+			}
+		}
+	}
+
+	form.cadastro-usuario {
+		margin-top: 20px;
+
+		p.nome,
+		p.sobrenome,
+		p.senha,
+		p.senha_novamente {
+			float: left;
+		}
+
+		p.nome {
+			width: 35%;
+		}
+
+		p.sobrenome {
+			width: 63%;
+			margin-left: 2%;
+		}
+
+		p.senha,
+		p.senha_novamente {
+			width: 49%;
+		}
+
+		p.senha_novamente {
+			margin-left: 2%;
+		}
+	}
+}

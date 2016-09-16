@@ -1,0 +1,1 @@
+jQuery(function(t){t(document).ready(function(){t("div.gallery figure").each(function(){t(this).find("a").attr("data-lightbox","galeria-apoio-ao-esporte"),t(this).find("a").attr("data-title",t(this).find("img").attr("alt"))})})});

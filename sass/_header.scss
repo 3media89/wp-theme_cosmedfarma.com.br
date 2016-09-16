@@ -1,0 +1,234 @@
+@import "compass/css3";
+@import "bootstrap_const";
+@import "global";
+
+header.site {
+	h1 {
+		margin: 130px 0 18px;
+
+		@media(min-width: 520px) {
+			margin: 80px 0 18px;
+		}
+
+		@media(min-width: $screen-md-min) {
+			margin: 11px 0 18px;
+		}
+
+		a {
+			display: block;
+			width: 209px;
+			height: 165px;
+			background: image-url('topo-logo.png', false, false) no-repeat;
+			text-indent: -9000px;
+			margin: 0 auto;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav {
+		li {
+			float: left;
+		}
+	}
+
+	nav.menu-topo-1 {
+		float: right;
+	}
+
+	nav.menu-topo-1 {
+		display: block;
+		width: 100%;
+		height: 102px;
+		background-color: #3F673A;
+		position: absolute;
+		top: -313px;
+		margin-left: -15px;
+
+		@media(min-width: 520px) {
+			height: 51px;
+			top: -263px;
+		}
+
+		@media(min-width: 600px) {
+			right: 50%;
+			width: 600px;
+			margin-right: -300px;
+		}
+
+		@media(min-width: $screen-md-min) {
+			position: initial;
+			margin-right: 0;
+			background: image-url('menu-topo-1-bkg.png', false, false) no-repeat;
+		}
+
+		ul {
+			position: relative;
+		}
+
+		a,
+		a:hover,
+		a:visited,
+		a:active {
+			color: #fff;
+			text-decoration: none;
+			line-height: 51px;
+			font-size: 25px;
+			font-weight: bold;
+
+			small {
+				font-size: 20px;
+			}
+		}
+
+		li.whatsapp {
+			a {
+				display: block;
+				width: 36px;
+				height: 34px;
+				background: image-url('icon-whatsapp.png', false, false) no-repeat;
+				text-indent: -9000px;
+				margin: 7px 7px 0 0;
+			}
+		}
+
+		li.telefones {
+			a {
+				line-height: 15px;
+				margin-top: 15px;
+				display: block;
+
+				@media(min-width: 425px) {
+					line-height: 51px;
+					margin-top: 15px;
+					display: initial;
+				}
+			}
+
+			br {
+				display: none;
+			}
+
+			span {
+				display: block;
+				text-indent: -9000px;
+
+				@media(min-width: 425px) {
+					display: initial;
+					text-indent: initial;
+				}
+			}
+		}
+
+		li.facebook,
+		li.instagram {
+			text-align: center;
+			float: right;
+			margin-top: 11px;
+			margin-right: 5px;
+
+			@media(min-width: 330px) {
+				margin-top: 60px;
+			}
+
+			@media(min-width: 425px) {
+				position: absolute;
+				top: 50px;
+				float: initial;
+				margin-top: 0;
+				margin-right: 0;
+			}
+
+			@media(min-width: 520px) {
+				top: 8px;
+				right: 0;
+			}
+
+			i {
+				border: 2px solid #fff;
+				@include border-radius(50%);
+				display: block;
+				width: 34px;
+				height: 34px;
+			}
+		}
+
+		li.facebook {
+			left: 300px;
+
+			@media(min-width: 520px) {
+				left: initial;
+				right: 57px;
+			}
+
+			i {
+				font-size: 15px;
+				padding-top: 8px;
+			}
+		}
+
+		li.instagram {
+			left: 342px;
+
+			@media(min-width: 520px) {
+				left: initial;
+				right: 15px;
+			}
+
+			i {
+				font-size: 22px;
+				padding: 3px 0 0 1px;
+			}
+		}
+	}
+
+	#menu-redes-sociais-e-telefones {
+		margin-left: 30px;
+	}
+
+	nav.menu-topo-2 {
+		clear: left;
+		margin: 20px auto;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+
+		@media(min-width: $screen-md-min) {
+			float: right;
+			margin: 63px 25px 0 0;
+			width: initial;
+		}
+
+		ul {
+			display: inline-block;
+		}
+
+		a,
+		a:hover,
+		a:visited,
+		a:active {
+			color: $cor-2;
+			text-decoration: none;
+			font-size: 25px;
+			text-transform: uppercase;
+		}
+
+		li {
+			margin: 10px 0;
+    		float: initial;
+
+    		@media(min-width: 567px) {
+    			margin: 0 40px 0 0;
+    			float: left;
+    		}
+		}
+
+		li:last-child {
+			margin-right: 0;
+		}
+	}
+}

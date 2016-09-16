@@ -1,0 +1,113 @@
+@import "bootstrap_const";
+@import "global";
+
+article.page {
+	a,
+	a:active,
+	a:visited,
+	a:hover {
+		color: #414042;
+	}
+
+	a:hover {
+		font-weight: bold;
+	}
+
+	span.email-padding {
+		@media(min-width: 448px) {
+			margin-left: 82px;
+		}
+	}
+
+	a.email {
+		font-size: 16px;
+
+		@media(min-width: 400px) {
+			font-size: 20px;
+		}
+	}
+
+	form {
+		margin-top: 24px;
+
+		p.email,
+		p.telefone,
+		p.medico-nutricionista,
+		p.crm-crn {
+			@media(min-width: $screen-sm-min) {
+				float: left;
+				width: 49%;
+			}
+		}
+
+		p.telefone,
+		p.crm-crn {
+			@media(min-width: $screen-sm-min) {
+				float: right;
+			}
+		}
+
+		p.receita {
+			label,
+			br {
+				display: initial;
+			}
+
+			label {
+				color: $cor-2;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+
+			input {
+				padding: 0;
+			}
+		}
+
+		input[type="submit"] {
+			margin-top: 42px;
+			width: 100%;
+			padding-left: 16px;
+			padding-right: 16px;
+			font-size: 17px;
+
+			@media(min-width: 375px) {
+				padding-left: 31px;
+				padding-right: 31px;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+::-webkit-input-placeholder {
+	font-size: 15px;
+
+	@media(min-width: 350px) {
+		font-size: 20px;
+	}
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	font-size: 15px;
+
+	@media(min-width: 350px) {
+		font-size: 20px;
+	}
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	font-size: 15px;
+
+	@media(min-width: 350px) {
+		font-size: 20px;
+	}
+}
+
+:-ms-input-placeholder {
+	font-size: 15px;
+
+	@media(min-width: 350px) {
+		font-size: 20px;
+	}
+}

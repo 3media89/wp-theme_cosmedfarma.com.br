@@ -1,0 +1,45 @@
+@import "global";
+
+form {
+	label,
+	br {
+		display: none;
+	}
+
+	p {
+		margin-bottom: 26px;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		border: 1px solid $cor-2;
+		padding: 14px 31px;
+	}
+
+	input[type="submit"] {
+		width: initial;
+		background-color: $cor-2;
+		color: #fff;
+	}
+}
+
+::-webkit-input-placeholder {
+	color: $cor-2;
+	text-transform: uppercase;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: $cor-2;
+	text-transform: uppercase;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: $cor-2;
+	text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+	color: $cor-2;
+	text-transform: uppercase;
+}

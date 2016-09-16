@@ -1,0 +1,1 @@
+.gallery-columns-4 .gallery-item{max-width:calc(50% - 4px)}div.gallery{text-align:center;margin-top:60px}div.gallery figure{width:calc(50% - 4px);margin-bottom:40px}@media (min-width: 768px){div.gallery figure{width:calc(25% - 4px)}}ul.atletas{margin:0;padding:0;list-style-type:none}ul.atletas h3{font-weight:bold;margin-bottom:15px;text-transform:uppercase}
